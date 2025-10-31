@@ -26,7 +26,7 @@ Para rodar este projeto na sua máquina, siga estes passos:
 
 1.  **Clone o repositório (ou baixe os arquivos):**
     ```bash
-    git clone <url-do-seu-repositorio>
+    git clone https://github.com/Gateiro/connect-skills
     cd connect-skills
     ```
 
