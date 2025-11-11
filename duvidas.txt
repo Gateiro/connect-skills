@@ -1,0 +1,1 @@
+- Quando instalo pacotes via npm ou npx, os dados de configuração vão automaticamente para o meu package-lock.json?

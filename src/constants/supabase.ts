@@ -1,0 +1,2 @@
+export const SUPA_URL = "https://gksglpbipfatvyuhvbge.supabase.co";
+export const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdrc2dscGJpcGZhdHZ5dWh2YmdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4Njk4NTMsImV4cCI6MjA3ODQ0NTg1M30.hgoIQ3F5mK2ArWlkUwpEt8eTzDUNlLlx32a3hJLqxSU";

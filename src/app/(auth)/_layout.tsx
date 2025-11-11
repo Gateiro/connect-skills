@@ -12,7 +12,7 @@ export default function AuthLayout() {
             }}
         >
             {/* -- Telas dentro da pilha -- */}
-            <Stack.Screen name="login" options={{title: "Entrar"}} />
+            <Stack.Screen name="index" options={{title: "Entrar"}} />
             <Stack.Screen name="register" options={{title: "Cadastro"}} />
         </Stack>
     );
