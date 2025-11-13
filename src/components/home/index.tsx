@@ -1,8 +1,8 @@
-//Componente visual da tela Home, usando o Swiper
 
 import React, { useRef, useState } from 'react';
-import { Alert, SafeAreaView, Text, View } from 'react-native';
-import Swiper from 'react-native-deck-swiper'; // [cite: 243]
+import { Alert, Text, View } from 'react-native';
+import Swiper from 'react-native-deck-swiper';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Componente de Card (exemplo do guia)
 const UserCard = ({ data }: { data: any }) => (
@@ -26,7 +26,7 @@ const UserCard = ({ data }: { data: any }) => (
   </View>
 );
 
-// Dados fictícios (MOCK)
+
 const DUMMY_USERS = [
   { id: 1, name: "Ana Silva", aprender: "Violão", ensinar: "Inglês" },
   { id: 2, name: "Bruno Costa", aprender: "Cozinha", ensinar: "Matemática" },
@@ -34,10 +34,10 @@ const DUMMY_USERS = [
 ];
 
 export function Home() {
-  // O 'useState' guarda a lista de usuários
+
   const [usuarios, setUsuarios] = useState(DUMMY_USERS);
   
-  // O 'useRef' permite controlar o Swiper 
+ 
   const swiperRef = useRef<Swiper<any>>(null);
 
   const handleSwipeRight = (cardIndex: number) => {
@@ -68,10 +68,10 @@ export function Home() {
             verticalSwipe={false} 
             cardVerticalMargin={20}
             containerStyle={{ flex: 1 }}
-            // Chamado quando todos os cards acabam
+
             onSwipedAll={() => {
               Alert.alert("Ups!", "Acabaram os usuários por hoje.");
-              setUsuarios([]); // Limpa os cards
+              setUsuarios([]); 
             }}
           />
         ) : (
